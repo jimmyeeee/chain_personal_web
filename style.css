@@ -1,0 +1,354 @@
+@charset "UTF-8";
+body{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0%;
+    color: aliceblue;
+    font-family: 'Noto Sans TC',sans-serif;
+    background-color: rgb(26, 26, 26);
+    background-image:url("./images/backbroundgraphic.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: hard-light;
+}
+img{
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+h1,h2,h3,h4,h5,ul{
+    padding: 0%;
+    margin: 0%;
+    border: 0ch;
+}
+li{
+    list-style: none;
+    margin: 0 10px;
+}
+header{
+    background-color: rgb(113, 113, 113);
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px 20px;
+    border: 0;
+    justify-content: center;
+    z-index: 999;
+}
+#header_logo{
+    display: inline-block;
+    width: 5%;
+    margin: 0 20px;
+}
+#header_logo h1 img{
+    margin: 0 20px;
+}
+#header_nav{
+    display: inline-block;
+    position: absolute;
+    font-size: 1.7rem;
+    right: 2%;
+    width: auto;
+    margin: 1.5%;
+}
+#header_nav ul li{
+    display: inline-block;
+}
+/* 下拉選單 */
+.menu{
+	flex:6;
+}
+.menu li{
+	position: relative;
+	flex: 1;
+	border-right: solid 1px #666;
+	margin: 10px 0;
+}
+.menu li:last-child{
+	border: none;
+}
+.father{
+	font-family: 'Noto Sans TC',sans-serif;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+	text-decoration: none;
+	color: #666;
+}
+.son a{
+	font-family: 'Noto Sans TC',sans-serif;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #666;
+}
+.menu_icon{
+    width: 10%;
+    margin: 0 5% 2%;
+}
+.menu div{
+	display: none;
+	z-index: 999;
+	width: 100%;
+	position: absolute;
+	right:0;
+	top: 120%;
+	background-color: rgba(255,255,255,.7);
+}
+.menu div a{
+	border-bottom: dotted 1px #666;
+}
+/* 下拉選單end */
+main{
+    margin: 6.8% 0 0 0;
+    width: 100%;
+    height: auto;
+}
+
+/* 打字首頁 */
+#typing_section{
+    height: 86vh;
+    background-image: url(images/title_box_background.jpg);
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+#title_typing_box{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+}
+.title_typing_box_content{
+    font-family:"台北黑體","Taipei Sans TC","微軟正黑體","黑體-繁",Helvetica, Arial, sans-serif;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 86%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 998;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes caret {
+    50% { border-color: transparent; }
+  }
+
+.typing_title_text {
+    margin: 0;
+    width: 8em;
+    border-right: .05em solid;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(11),
+      caret 1s steps(1) infinite;
+}
+/* 打字首頁 end*/
+
+
+#about{
+    align-content: space-around;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 5% 0 0;
+}
+.title{
+    width: 10%;
+    margin: 0 auto 5%;
+}
+.title h2{
+    width: auto;
+    display: block;
+    font-family:"台北黑體","Taipei Sans TC","微軟正黑體","黑體-繁",Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    border-bottom: 2px solid aliceblue;
+    align-content: space-around;
+}
+#about_container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#about_container>div{
+    margin: 0 8%;
+}
+#about_photo_div{
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+    align-items: flex-end;
+
+}
+#about_introduction{
+    display: inline-block;
+}
+#about_introduction ul{
+    margin:20% 0;
+}
+#about_introduction ul li{
+    margin: 6% 0;
+    font-size: 1.3rem;
+}
+#about_introduction ul li:last-child{
+    margin-top: 10%;
+}
+#more_btn{
+    width: 30%;
+    margin: auto;
+    padding: 2%;
+    border: 2px double aliceblue;
+    font-size: 1rem;
+}
+#more_btn a{
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+}
+#more_btn a:hover{
+    color: rgb(113, 113, 113);
+}
+#more_btn a::before{
+    content: "";
+    position: absolute;
+    top: -38%;
+    left: -68%;
+    width: 0%;
+    height:191%;
+    background-color: aliceblue;
+    /* transform: skewX(35deg); */
+    z-index: -1;
+    transition: width 1s;
+}
+#more_btn a:hover::before{
+    width:236%;
+}
+/* #more_btn{
+    margin: 10% 0;
+    border: 2px double aliceblue;
+} */
+#personal_sign{
+    position: absolute;
+    width: 12%;
+    right: 5%;
+    bottom: 3%;
+    opacity: .4;
+}
+#work{
+    align-content: space-around;
+    width: 100%;
+    text-align: center;
+    padding: 5% 0 0;
+}
+#work_container{
+    width: 100%;
+    height: 130vh;
+}
+.work_object,.work_object_mid{
+    display: inline-block;
+    width: 20%;
+    height: 33%;
+    margin: 3%;
+    padding: 0 0 1%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255),rgba(255, 255, 255, 0.688),rgba(255, 255, 255, 0.874),rgb(135, 135, 135));
+}
+.work_object .small_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.work_object_mid .small_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+.work_object_mid .small_photo img{
+    width: 100%;
+    height: auto;
+}
+.work_object h3,.work_object_mid h3{
+    display: flex;
+    justify-content: left;
+}
+.work_object small,.work_object_mid small{
+    display: flex;
+    justify-content: right;
+}
+.small_photo img{
+    width: auto;
+    height: 100%;
+}
+.work_object h3,.work_object_mid h3,.work_object small,.work_object_mid small{
+    margin: 3.5% 10% 0;
+}
+#contact{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+#contact_form{
+    width: 35%;
+}
+#contact_form *{
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+}
+#contact_form label{
+    display: block;
+}
+.input_style,#message{
+    border-radius: 5px;
+}
+#submit {
+    display: block;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 30px;
+    width: 210px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #a0bad8;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+#submit:hover {
+    animation: rotate 0.7s ease-in-out both;
+}
+footer{
+    background-color: black;
+    padding: 2% 0 1%;
+    margin-top: 10%;
+}
+footer small{
+    display: block;
+    text-align: end;
+    padding-right: 4%;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,intial-scale=1.0">
+ <meta name="keywords" content="">
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <meta name="copyright" content="">
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="style.css">
+ <title>Chain</title>
+</head>
+<body>
+    <!--  -->
+    <header>
+        <div id="header_logo">
+            <h1>
+                <a href="#">
+                    <img src="images/person_sign white.png" alt="謙 手寫logo">
+                </a>
+            </h1>
+        </div>
+        <nav id="header_nav">
+            <ul class="menu">
+                <li>
+                    <a href="#" class="father">
+                        <img src="./images/bars-staggered-solid.svg" alt="" class="menu_icon">
+                    </a>
+                    <!-- div>a[href="#"]*4{產品$} -->
+                    <div class="son">
+                        <a href="#">home</a>
+                        <a href="#about">about</a>
+                        <a href="#work">work</a>
+                        <a href="#contact">contact</a>
+                    </div>
+                </li>
+                <!-- <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!--  -->
+    <main>
+        <section id="typing_section">
+            <div id="title_typing_box">
+                <div class="title_typing_box_content">
+                    <p class="typing_title_text"> Hello World ! </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="title">
+                <h2>About</h2>
+            </div>
+            <div id="about_container" class="smoove">
+                <div id="about_photo_div">
+                    <img src="images/about_photo.jpg" alt="李以謙大頭照">
+                </div>
+                <div id="about_introduction">
+                    <ul>
+                        <li>想要把有興趣但不擅長的領域都學會</li>
+                        <li>探索極限、挑戰極限、突破極限</li>
+                        <li>理科腦想學會甚麼叫做創新創意</li>
+                        <li>
+                            <div id="more_btn">
+                                <a href="about_more.html">more</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="personal_sign">
+                    <img src="./images/person_sign white.png" alt="李以謙手寫簽名檔">
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="title">
+                <h2>Work</h2>
+            </div>
+            <div id="work_container" class="smoove">
+                <div class="work_object" class="smoove">
+                    <a href="work_inside_sea_page.html">
+                        <div class="small_photo">
+                            <img src="images/sea/woman.jpg" alt="">
+                        </div>
+                        <h3>望海</h3>
+                        <small>type photographic</small>
+                    </a>
+                </div>
+                <div class="work_object_mid" class="smoove">
+                    <a href="work_inside_road_page.html">
+                        <div class="small_photo">
+                            <img src="images/road/car_rol.jpg" alt="">
+                        </div>
+                        <h3>孤路</h3>
+                        <small>type photographic</small>
+                    </a>
+                </div>
+                <div class="work_object" class="smoove">
+                    <a href="work_inside_need_or_law_page.html">
+                        <div class="small_photo">
+                            <img src="images/need_or_law/bike_row.jpg" alt="">
+                        </div>
+                        <h3>制度與需求</h3>
+                        <small>type photographic</small>
+                    </a>
+                </div>
+
+                <div class="work_object" class="smoove">
+                    <a href="work_inside_light_page.html">
+                        <div class="small_photo">
+                            <img src="images/light/DSC_1885 (1).jpg" alt="">
+                        </div>
+                        <h3>燈條</h3>
+                        <small>type photographic</small>
+                    </a>
+                </div>
+                <div class="work_object_mid" class="smoove">
+                    <a href="work_inside_food_page.html">
+                        <div class="small_photo">
+                            <img src="images/food/restaurant_col.jpg" alt="">
+                        </div>
+                        <h3>美食</h3>
+                        <small>type photographic</small>
+                    </a>
+                </div>
+                <div class="work_object" class="smoove">
+                    <a href="work_inside_vision_page.html">
+                        <div class="small_photo">
+                            <img src="images/vision/camera_row.jpg" alt="">
+                        </div>
+                        <h3>視野</h3>
+                        <small>type photographic</small>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact">
+            <h2 class="headline">CONTACT</h2>
+            <form id="contact_form" name="contact_form" method="post" class="smoove">
+                <label for="name">*姓名:</label>
+                <input type="text" class="input_style" name="name" id="name" required="required" autocomplete="on"
+                    placeholder="王大明" title="請輸入姓名">
+                <label for="tel">聯絡電話:</label>
+                <input type="tel" class="input_style" name="tel" id="tel" autocomplete="on" placeholder="02-99999999">
+                <label for="email">*Email:</label>
+                <input type="email" class="input_style" name="email" id="email" required="required" autocomplete="on"
+                    placeholder="youname@mail.com">
+                <label for="message">*留言:</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+                <input type="submit" name="submit" id="submit" value="送出">
+            </form> 
+        </section>
+    </main>
+
+    <footer>
+        <div id="header_logo">
+            <h1>
+                <a href="#">
+                    <img src="images/person_sign white.png" alt="謙 手寫logo">
+                </a>
+            </h1>
+        </div>
+        <nav id="header_nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <small>copyright © 2022 Chain</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

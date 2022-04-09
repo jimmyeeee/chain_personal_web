@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,intial-scale=1.0">
+ <meta name="keywords" content="">
+ <meta name="description" content="">
+ <meta name="author" content="">
+ <meta name="copyright" content="">
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <link rel="stylesheet" href="inside_page.css">
+ <link rel="stylesheet" href="style.css">
+ <title>Chain</title>
+</head>
+<body>
+    <header>
+        <div id="header_logo">
+            <h1>
+                <a href="#">
+                    <img src="images/person_sign white.png" alt="謙 手寫logo">
+                </a>
+            </h1>
+        </div>
+        <nav id="header_nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about_more.html">about</a></li>
+                <li><a href="index.html#work">work</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="back">
+            <a href="index.html#work">
+                <img src="images/arrow-left-solid.svg" alt="">
+            </a>
+        </div>
+        <section id="showout">
+
+            <div class="title">
+                <h2>Highlight</h2>
+            </div>
+
+            <div id="tabs">
+                
+                <div id="tabs-1">
+                    <figure>
+                        <img src="images/road/car_rol.jpg" alt="">
+                    </figure>
+                    <div class="photo_text">
+                        <h2>孤路</h2>
+                        <p>山谷裡被森林圍繞的孤單小路</p>
+                        <small>canon 80D</small>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <figure>
+                        <img src="images/road/nature.jpg" alt="">
+                    </figure>
+                    <div class="photo_text">
+                        <h2>朦朧</h2>
+                        <p>無法看清視野很不安全，但也很有神祕感</p>
+                        <small>Sony xperia 10+</small>
+                    </div>
+                </div>
+                <div id="tabs-3">
+                    <figure>
+                        <img src="images/road/train_row.jpg" alt="">
+                    </figure>
+                    <div class="photo_text">
+                        <h2>輕軌</h2>
+                        <p>旅遊?運載?想兼顧卻都沒顧到</p>
+                        <small>canon 80D</small>
+                    </div>
+            </div>
+
+                <ul class="btn">
+                    <li>
+                        <a href="#tabs-1"><img src="images/road/car_rol.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#tabs-2"><img src="images/road/nature.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#tabs-3"><img src="images/road/train_row.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="header_logo">
+            <h1>
+                <a href="#">
+                    <img src="images/person_sign white.png" alt="謙 手寫logo">
+                </a>
+            </h1>
+        </div>
+        <nav id="header_nav">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about_more.html">about</a></li>
+                <li><a href="index.html#work">work</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+            </ul>
+        </nav>
+        <small>copyright © 2022 Chain</small>
+    </footer>
+
+    <!-- jq原生碼 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jq相簿原生碼 -->
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <!-- 自訂js一定要放在最下面，必須先執行上方的語法，才能成立 -->
+    <script src="script.js"></script>
+</body>
+</html>
